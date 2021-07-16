@@ -1,5 +1,5 @@
-char *backcall( char *arg);
+int backcall( char *arg);
 
 char *libcall( char *arg){
-  return backcall(arg);
+  return arg+backcall(arg);
 }

@@ -39,7 +39,7 @@ librttiexcep.so: rtti.o
 	g++ $(CXXFLAGS) $(LDFLAGS) -fPIC -shared -o librttiexcep.so rtti.o
 
 rtti.o: rtti-exception.C  rtti-exception.h
-	g++ $(CXXFLAGS) -fPIC -c -o rtti.o -DVER_1 rtti-exception.C
+	g++ $(CXXFLAGS) -fPIC -c -o rtti.o -DVER_2 rtti-exception.C
 
 
 # ------ TESTS ------
